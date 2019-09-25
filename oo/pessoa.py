@@ -16,8 +16,11 @@ class Pessoa:# Cria a classe pessoa
     def nomes_e_atributos_de_classe(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+class Homem (Pessoa):# Herança da classe Pessoa
+    pass
+
 if __name__ == '__main__':
-    felipe = Pessoa(nome='Felipe')
+    felipe = Homem(nome='Felipe')
     antonio = Pessoa(felipe, nome='Antonio')
     print(Pessoa.cumprimentar(antonio))
     print(id(antonio))
